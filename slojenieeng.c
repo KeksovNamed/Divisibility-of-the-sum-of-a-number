@@ -154,7 +154,7 @@ int main()
 			delimostchisla=1;
 			//printf("Divider =%d,number %d divided without remainder", del, a);
 		}
-	}	
+	}
 	if (delimostsummy!=delimostchisla)
 	{
 		if(delimostsummy==1)
@@ -165,6 +165,14 @@ int main()
 		{
 			printf("Divider =%d,number %d does not divide without remainder", del, a);
 		}
+		if(delimostchisla==1)
+		{
+			printf("Divider =%d,number %d divided without remainder", del, a);
+		}
+		if(delimostchisla==0)
+		{
+			printf("Divider =%d,number %d does not divide without remainder", del, a);
+		}
 	}
 	if(delimostsummy==1&&delimostchisla==1)
 	{
@@ -172,7 +180,7 @@ int main()
 	}
 	if(delimostsummy==0&&delimostchisla==0)
 	{
-	printf("Divider =%d,number %d does not divide without remainder", del, a);	
+		printf("Divider =%d,number %d does not divide without remainder", del, a);
 	}
 	return 0;
 }
