@@ -157,21 +157,13 @@ int main()
 	}
 	if (delimostsummy!=delimostchisla)
 	{
-		if(delimostsummy==1)
+		if(delimostsummy==1&&delimostchisla==0)
 		{
-			printf("Divider =%d,number %d divided without remainder", del, a);
+			printf("Делитель =%d,число %d делится без остатка", del, a);
 		}
-		if(delimostsummy==0)
+		if(delimostsummy==0&&delimostchisla==1)
 		{
-			printf("Divider =%d,number %d does not divide without remainder", del, a);
-		}
-		if(delimostchisla==1)
-		{
-			printf("Divider =%d,number %d divided without remainder", del, a);
-		}
-		if(delimostchisla==0)
-		{
-			printf("Divider =%d,number %d does not divide without remainder", del, a);
+			printf("Делитель =%d,число %d не делится без остатка", del, a);
 		}
 	}
 	if(delimostsummy==1&&delimostchisla==1)
