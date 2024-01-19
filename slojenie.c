@@ -48,7 +48,7 @@ int main()
 	{
 		result =  a/del;
 	}
-	if(a=del)
+	if(a==del)
 	{
 		result=a/del;//а что тогда? да ничего =)
 	}
