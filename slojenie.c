@@ -97,7 +97,7 @@ int main()
 			//printf("Делитель =%d,число %d не делится без остатка", del, a); //если больше то не делится без остатка
 		}
 
-		if (doubleresult == finalresult)
+		if (doubleresult2 == finalresult)
 		{
 			delimostchisla=1;
 			//printf("Делитель =%d,число %d делится без остатка", del, a);  //если равно тогда делится
@@ -113,7 +113,7 @@ int main()
 		double doublefinal = tmpfinal;  //создаём double копии значений
 		double doubledel = del; //создаём double копии значений
 		double doubleresult2 = doublefinal / doubledel; //Что в итоге для double?
-		printf("Деление суммы чисел полное(double)  равно=%g\n", doubleresult);   //пишем результат полный для числа.
+		printf("Деление суммы чисел полное(double)  равно=%g\n", doubleresult2);   //пишем результат полный для числа.
 		double finalresult = result2;    //делаем double из значения result(сколько получился целый результат)
 		printf("Деление суммы чисел  равно=%d\n", result2); //выводим значение целого результата.
 		if (doubleresult2 > finalresult) //сравнение полного результата с результатом целым
@@ -137,16 +137,16 @@ int main()
 		double doublefinal = tmpfinal;  //создаём double копии значений
 		double doubledel = del; //создаём double копии значений
 		double doubleresult2 = doublefinal / doubledel; //Что в итоге для double?
-		printf("Деление суммы чисел полное(double)  равно=%g\n", doubleresult);   //пишем результат полный для числа.
+		printf("Деление суммы чисел полное(double)  равно=%g\n", doubleresult2);   //пишем результат полный для числа.
 		double finalresult = result2;    //делаем double из значения result(сколько получился целый результат)
 		printf("Деление суммы чисел  равно=%d\n", result2); //выводим значение целого результата.
-		if (doubleresult > finalresult) //сравнение полного результата с результатом целым
+		if (doubleresult2 > finalresult) //сравнение полного результата с результатом целым
 		{
 			delimostchisla=0;
 			//printf("Делитель =%d,число %d не делится без остатка", del, a); //если больше то не делится без остатка,отладочная печать
 		}
 
-		if (doubleresult == finalresult)    //если равно тогда делится
+		if (doubleresult2 == finalresult)    //если равно тогда делится
 		{
 			delimostchisla=1;
 			//printf("Делитель =%d,число %d делится без остатка", del, a);
