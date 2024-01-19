@@ -20,31 +20,31 @@ int main()
 	}
 	if(sum<divisor)
 	{
-		printf("Делитель больше числа, будет нецелый результат");
+		printf("The divisor is greater than the number, the result will be non-integer");
 		return 0;
 	}
-	double bigsum = sum;  //создаём double копии значенийй
-	double bigresult = result;   //создаём double копии значений
-	double bigdivisor = divisor; //создаём double копии значений
+	double bigsum = sum;  //create double copies of values
+	double bigresult = result;   //create double copies of values
+	double bigdivisor = divisor; //create double copies of values
 	if(bigsum>bigdivisor)
 	{
-		bigresult = bigsum / bigdivisor;//Что в итоге для double?
+		bigresult = bigsum / bigdivisor;//What's the bottom line for double?
 	}
 	else
 	{
-		bigresult=bigdivisor/bigsum;	//Что в итоге для double?
+		bigresult=bigdivisor/bigsum;	//What's the bottom line for double?
 	}
-	printf("Деление суммы числа на число полное=%g\n", bigresult);   //пишем результат полный для числа.
-	double finalresult = result;    //делаем double из значения result(сколько получился целый результат)
-	printf("Деление суммы числа на число равен=%d\n", result); //выводим значение целого результата.
-	if (bigresult > finalresult) //сравнение полного результата с результатом целым
+	printf("Dividing the sum of a number by the total number=%g\n", bigresult);   //we write the complete result for the number.
+	double finalresult = result;    //make a double from the result value (how much is the whole result)
+	printf("Dividing the sum of a number by a number is equal to=%d\n", result); //print the value of the integer result.
+	if (bigresult > finalresult) //Comparing the full result with the result of the whole integer result.
 	{
-		printf("Делитель =%d,число %d не делится без остатка\n", divisor, sum); //если больше то не делится без остатка
+		printf("Divider =%d,number %d does not divide without remainder\n", divisor, sum); //if more then it is not divided without remainder
 	}
 
 	if (bigresult == finalresult)
 	{
-		printf("Делитель =%d,число %d делится без остатка\n", divisor, sum);  //если равно тогда делится
+		printf("Divider =%d,number %d divided without remainder\n", divisor, sum);  //if equal then divide
 }
 return 0;
 }
