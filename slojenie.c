@@ -86,13 +86,12 @@ int main()
 		del = tmpdel;   //холостая операция,незнаю зачем оставил.
 		int result2 = del / tmpfinal;    //делим длину делителя и всех чисел
 		double doublefinal = tmpfinal;  //создаём double копии значений
-		double doubleresult2 = result2;   //создаём double копии значений
 		double doubledel = del; //создаём double копии значений
-		doubleresult = doubledel / doublefinal; //Что в итоге для double?
+		double doubleresult2 = doubledel / doublefinal; //Что в итоге для double?
 		printf("Деление суммы чисел полное(double)  равно=%g\n", doubleresult2);   //пишем результат полный для числа.
 		double finalresult = result2;    //делаем double из значения result(сколько получился целый результат)
 		printf("Деление суммы чисел  равно=%d\n", result2); //выводим значение целого результата.
-		if (doubleresult > finalresult) //сравнение полного результата с результатом целым
+		if (doubleresult2 > finalresult) //сравнение полного результата с результатом целым
 		{
 			delimostchisla=0;
 			//printf("Делитель =%d,число %d не делится без остатка", del, a); //если больше то не делится без остатка
@@ -112,13 +111,12 @@ int main()
 		del = tmpdel;   //холостая операция,незнаю зачем оставил.
 		int result2 = tmpfinal / del;    //делим длину всех чисел с делителем
 		double doublefinal = tmpfinal;  //создаём double копии значений
-		double doubleresult2 = result2;   //создаём double копии значений
 		double doubledel = del; //создаём double копии значений
-		doubleresult = doublefinal / doubledel; //Что в итоге для double?
+		double doubleresult2 = doublefinal / doubledel; //Что в итоге для double?
 		printf("Деление суммы чисел полное(double)  равно=%g\n", doubleresult);   //пишем результат полный для числа.
 		double finalresult = result2;    //делаем double из значения result(сколько получился целый результат)
 		printf("Деление суммы чисел  равно=%d\n", result2); //выводим значение целого результата.
-		if (doubleresult > finalresult) //сравнение полного результата с результатом целым
+		if (doubleresult2 > finalresult) //сравнение полного результата с результатом целым
 		{
 			delimostchisla=0;
 			//printf("Делитель =%d,число %d не делится без остатка", del, a); //если больше то не делится без остатка,отладочная печать
@@ -137,9 +135,8 @@ int main()
 		del = tmpdel;   //холостая операция,незнаю зачем оставил.
 		int result2 = tmpfinal / del;    //делим длину всех чисел с делителем
 		double doublefinal = tmpfinal;  //создаём double копии значений
-		double doubleresult = result2;   //создаём double копии значений
 		double doubledel = del; //создаём double копии значений
-		doubleresult = doublefinal / doubledel; //Что в итоге для double?
+		double doubleresult2 = doublefinal / doubledel; //Что в итоге для double?
 		printf("Деление суммы чисел полное(double)  равно=%g\n", doubleresult);   //пишем результат полный для числа.
 		double finalresult = result2;    //делаем double из значения result(сколько получился целый результат)
 		printf("Деление суммы чисел  равно=%d\n", result2); //выводим значение целого результата.
@@ -165,7 +162,6 @@ int main()
 		{
 			printf("Делитель =%d,число %d не делится без остатка", del, a);
 		}
-
 	}
 	if(delimostsummy==1&&delimostchisla==1)
 	{
