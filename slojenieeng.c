@@ -86,19 +86,18 @@ int main()
 		del = tmpdel;   //Idle operation, I don’t know why I left it.
 		int result2 = del / tmpfinal;    //divide the length of the divisor and all numbers
 		double doublefinal = tmpfinal;  //create double copies of values
-		double doubleresult2 = result2;   //create double copies of values
 		double doubledel = del; //create double copies of values
-		doubleresult = doubledel / doublefinal; //What's the bottom line for double?
+		doubleresult2 = doubledel / doublefinal; //What's the bottom line for double?
 		printf("Full division of the sum of numbers (double) is equal to=%g\n", doubleresult2);   //we write the complete result for the number.
 		double finalresult = result2;    //make a double from the result value (how much is the whole result)
 		printf("Деление суммы чисел  равно=%d\n", result2); //print the value of the integer result.
-		if (doubleresult > finalresult) //comparison of the full result with the whole result
+		if (doubleresult2 > finalresult) //comparison of the full result with the whole result
 		{
 			delimostchisla=0;
 			//printf("Divider =%d,number %d does not divide without remainder", del, a); //if more then it is not divided without remainder
 		}
 
-		if (doubleresult == finalresult)
+		if (doubleresult2 == finalresult)
 		{
 			delimostchisla=1;
 			//printf("Divider =%d,number %d does not divide without remainder", del, a);  //if equal then divide
@@ -112,19 +111,18 @@ int main()
 		del = tmpdel;   //Idle operation, I don’t know why I left it.
 		int result2 = tmpfinal / del;    //divide the length of all numbers with a divisor
 		double doublefinal = tmpfinal;  //create double copies of values
-		double doubleresult2 = result2;   //create double copies of values
 		double doubledel = del; //create double copies of values
-		doubleresult = doublefinal / doubledel; //What's the bottom line for double?
-		printf("Full division of the sum of numbers (double) is equal to=%g\n", doubleresult);   //we write the complete result for the number.
+		doubleresult2 = doublefinal / doubledel; //What's the bottom line for double?
+		printf("Full division of the sum of numbers (double) is equal to=%g\n", doubleresult2);   //we write the complete result for the number.
 		double finalresult = result2;    //make a double from the result value (how much is the whole result)
 		printf("Dividing the sum of numbers is equal to=%d\n", result2); //print the value of the integer result.
-		if (doubleresult > finalresult) //comparison of the full result with the whole result
+		if (doubleresult2 > finalresult) //comparison of the full result with the whole result
 		{
 			delimostchisla=0;
 			//printf("Divider =%d,number %d does not divide without remainder", del, a); //if more then it is not divided without remainder
 		}
 
-		if (doubleresult == finalresult)    //if equal then divide
+		if (doubleresult2 == finalresult)    //if equal then divide
 		{
 			delimostchisla=1;
 			//printf("Divider =%d,number %d does not divide without remainder", del, a);
@@ -137,19 +135,18 @@ int main()
 		del = tmpdel;   //idle operation, I don’t know why I left it.
 		int result2 = tmpfinal / del;    //divide the length of all numbers with a divisor
 		double doublefinal = tmpfinal;  //create double copies of values
-		double doubleresult2 = result2;   //create double copies of values
 		double doubledel = del; //create double copies of values
-		doubleresult = doublefinal / doubledel; //What's the bottom line for double?
-		printf("Full division of the sum of numbers (double) is equal to=%g\n", doubleresult);   //we write the complete result for the number.
+		doubleresult2 = doublefinal / doubledel; //What's the bottom line for double?
+		printf("Full division of the sum of numbers (double) is equal to=%g\n", doubleresult2);   //we write the complete result for the number.
 		double finalresult = result2;    //make a double from the result value (how much is the whole result)
 		printf("Dividing the sum of numbers is equal to=%d\n", result2); //print the value of the integer result.
-		if (doubleresult > finalresult) //comparison of the full result with the whole result
+		if (doubleresult2 > finalresult) //comparison of the full result with the whole result
 		{
 			delimostchisla=0;
 			//printf("Divider =%d,number %d does not divide without remainder", del, a); //if more then it is not divided without remainder, debug printing
 		}
 
-		if (doubleresult == finalresult)    //if equal then divide
+		if (doubleresult2 == finalresult)    //if equal then divide
 		{
 			delimostchisla=1;
 			//printf("Divider =%d,number %d divided without remainder", del, a);
