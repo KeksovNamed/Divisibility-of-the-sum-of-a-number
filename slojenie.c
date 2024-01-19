@@ -122,7 +122,7 @@ int main()
 			//printf("Делитель =%d,число %d не делится без остатка", del, a); //если больше то не делится без остатка,отладочная печать
 		}
 
-		if (doubleresult == finalresult)    //если равно тогда делится
+		if (doubleresult2 == finalresult)    //если равно тогда делится
 		{
 			delimostchisla=1;
 			//printf("Делитель =%d,число %d делится без остатка", del, a);
