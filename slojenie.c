@@ -48,9 +48,14 @@ int main()
 	{
 		result =  a/del;
 	}
+	if(a=del)
+	{
+		result=a/del;//а что тогда? да ничего =)
+	}
 	else
 	{
-		result = del/a;
+		printf("Делитель больше числа, будет нецелый результат");
+		return;
 	}
 	double doublea = a;  //создаём double копии значений
 	double doubleresult = result;   //создаём double копии значений
