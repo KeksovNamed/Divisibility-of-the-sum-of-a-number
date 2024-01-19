@@ -159,11 +159,11 @@ int main()
 	{
 		if(delimostsummy==1&&delimostchisla==0)
 		{
-			printf("Делитель =%d,число %d делится без остатка", del, a);
+			printf("Divider =%d,number %d divided without remainder", del, a);
 		}
 		if(delimostsummy==0&&delimostchisla==1)
 		{
-			printf("Делитель =%d,число %d не делится без остатка", del, a);
+			printf("Divider =%d,number %d does not divide without remainder", del, a);
 		}
 	}
 	if(delimostsummy==1&&delimostchisla==1)
