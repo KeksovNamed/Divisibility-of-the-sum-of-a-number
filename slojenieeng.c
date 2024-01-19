@@ -55,7 +55,7 @@ int main()
 	if(a<del)
 	{
 		printf("The divisor is greater than the number, the result will be non-integer");
-		return;
+		return 0;
 	}
 	double doublea = a;  //create double copies of values
 	double doubleresult = result;   //create double copies of values
