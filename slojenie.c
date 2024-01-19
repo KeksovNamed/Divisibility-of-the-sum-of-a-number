@@ -130,7 +130,7 @@ int main()
 			//printf("Делитель =%d,число %d делится без остатка", del, a);
 		}
 	}
-	if (tmpfinal == del) //если сумма всех чисел равно делителю
+	if (tmpfinal == del) //если сумма всех чисел больше делителя
 	{
 		int tmptemp = tmpfinal; //перетасовывем длину всех чисел со временным хранилищем
 		int tmpdel = del;   //перетасовываем делитель с временным хранилищем.
@@ -157,22 +157,15 @@ int main()
 	}
 	if (delimostsummy!=delimostchisla)
 	{
-		if(delimostsummy==1)
+		if(delimostsummy==1&&delimostchisla==0)
 		{
 			printf("Делитель =%d,число %d делится без остатка", del, a);
 		}
-		if(delimostsummy==0)
+		if(delimostsummy==0&&delimostchisla==1)
 		{
 			printf("Делитель =%d,число %d не делится без остатка", del, a);
 		}
-		if(delimostchisla==1)
-		{
-			printf("Делитель =%d,число %d делится без остатка", del, a);
-		}
-		if(delimostchisla==0)
-		{
-			printf("Делитель =%d,число %d не делится без остатка", del, a);
-		}
+
 	}
 	if(delimostsummy==1&&delimostchisla==1)
 	{
