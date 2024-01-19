@@ -9,7 +9,6 @@ int main()
 	printf("Введите десятичное целое число и делитель\n");
 	scanf("%d%d", &sum, &divisor);
 	printf("Число равно =%d делитель равно =%d\n", sum, divisor);
-	printf("Теперь проверяем делимость чисел+деление сумм чисел/делитель!\n");
 	int result;
 	if (sum>divisor)
 	{
