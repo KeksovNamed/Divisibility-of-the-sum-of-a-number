@@ -52,7 +52,7 @@ int main()
 	{
 		result=a/del;//and then what? yeah nothing =)
 	}
-	else
+	if(a<del)
 	{
 		printf("The divisor is greater than the number, the result will be non-integer");
 		return;
