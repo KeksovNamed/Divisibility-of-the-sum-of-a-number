@@ -130,7 +130,7 @@ int main()
 			//printf("Divider =%d,number %d does not divide without remainder", del, a);
 		}
 	}
-	if (tmpfinal == del) //if the sum of all numbers is greater than the divisor
+	if (tmpfinal == del) //if the sum of all numbers is equal to the divisor
 	{
 		int tmptemp = tmpfinal; //shuffle the length of all numbers with temporary storage
 		int tmpdel = del;   //shuffle the divider with temporary storage.
