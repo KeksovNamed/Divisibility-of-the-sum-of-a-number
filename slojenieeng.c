@@ -48,9 +48,14 @@ int main()
 	{
 		result =  a/del;
 	}
+	if(a=del)
+	{
+		result=a/del;//and then what? yeah nothing =)
+	}
 	else
 	{
-		result = del/a;
+		printf("The divisor is greater than the number, the result will be non-integer");
+		return;
 	}
 	double doublea = a;  //create double copies of values
 	double doubleresult = result;   //create double copies of values
