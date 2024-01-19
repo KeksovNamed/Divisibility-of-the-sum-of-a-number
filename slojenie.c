@@ -55,7 +55,7 @@ int main()
 	if(a<del)
 	{
 		printf("Делитель больше числа, будет нецелый результат");
-		return;
+		return 0;
 	}
 	double doublea = a;  //создаём double копии значений
 	double doubleresult = result;   //создаём double копии значений
