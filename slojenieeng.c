@@ -1,4 +1,4 @@
-/*The program calculates the sum of numbers and business ability for others v1.0 by Keksovname*/
+/*The program calculates the sum of the digits of a number and divisibility by another v1.0 by Keksovname*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <conio.h>
@@ -6,10 +6,33 @@
 int main()
 {
 	unsigned int sum, divisor;
+	int divisibilitynumbers=0,divisibilityamounts=0;
 	printf("Enter a decimal integer and divisor\n");
 	scanf("%d%d", &sum, &divisor);
-	printf("The number is=%d divisor equals =%d\n", sum, divisor);
+	printf("The number is =%d divisor equals =%d\n", sum, divisor);
+	printf("Now we check the divisibility of numbers + division of sums of numbers / divisor!\n");
 	int result;
+	int length(int n)   //код взят из гугла
+	{
+		int l = 1;
+		for (; n /= 10; ++l);
+		return l;
+	}
+
+	int lengthnumbers = length(sum);
+	printf("Number length =%d\n",lengthnumbers);
+	int final = 0;
+	int one = 1;
+	int tmpfinal = 0;
+	int count1=0;
+	int newfinal=0;
+	for (count1; count1 < lengthnumbers; ++count1)
+	{
+		final = sum / one % 10;
+		newfinal = newfinal + final;
+		one = one * 10;
+	}
+	int summa=newfinal;
 	if (sum>divisor)
 	{
 		result =  sum/divisor;
@@ -34,17 +57,92 @@ int main()
 	{
 		bigresult=bigdivisor/bigsum;	//What's the bottom line for double?
 	}
-	printf("Dividing the sum of a number by the total number=%g\n", bigresult);   //we write the complete result for the number.
+	printf("Dividing the sum of a number by the total number=%g\n", bigresult);   //write the complete result for the number.
 	double finalresult = result;    //make a double from the result value (how much is the whole result)
 	printf("Dividing the sum of a number by a number is equal to=%d\n", result); //print the value of the integer result.
-	if (bigresult > finalresult) //Comparing the full result with the result of the whole integer result.
+	if (bigresult > finalresult) //comparison of the full result with the whole result
 	{
-		printf("Divider =%d,number %d does not divide without remainder\n", divisor, sum); //if more then it is not divided without remainder
+		divisibilityamounts=0;
+		//printf("Divider =%d,number %d does not divide without remainder\n", divisor, sum); //if more then it is not divided without remainder
 	}
 
 	if (bigresult == finalresult)
 	{
-		printf("Divider =%d,number %d divided without remainder\n", divisor, sum);  //if equal then divide
-}
-return 0;
+		divisibilityamounts=1;
+		//printf("Divider =%d,number %d divided without remainder\n", divisor, sum);  //if equal then divide
+	}
+	if (summa < divisor)
+	{
+		int resultnew = divisor / summa;
+		double bigsummanew=summa;
+		double bigdivisornew = divisor;
+		double bigresultnew=bigdivisornew / bigsummanew;
+		double newfinalresult = resultnew;
+		printf("Full division of the sum of numbers (double) is equal to=%g\n", bigresultnew);
+		printf("Dividing the sum of numbers is equal to=%d\n", resultnew);
+		if (bigresultnew > newfinalresult)
+		{
+			divisibilitynumbers=0;
+		}
+		if (bigresultnew == newfinalresult)
+		{
+			divisibilitynumbers=1;
+		}
+	}
+	if (summa > divisor)
+	{
+		int resultnew = summa / divisor;
+		double bigsummanew=summa;
+		double bigdivisornew = divisor;
+		double bigresultnew=bigsummanew / bigdivisornew;
+		double newfinalresult = resultnew;
+		printf("Full division of the sum of numbers (double) is equal to=%g\n", bigresultnew);
+		printf("Dividing the sum of numbers is equal to=%d\n", resultnew);
+		if (bigresultnew > newfinalresult)
+		{
+			divisibilitynumbers=0;
+		}
+		if (bigresultnew == newfinalresult)
+		{
+			divisibilitynumbers=1;
+		}
+
+	}
+	if (summa == divisor)
+	{
+		int resultnew = summa / divisor;
+		double bigsummanew=summa;
+		double bigdivisornew = divisor;
+		double bigresultnew=bigsummanew / bigdivisornew;
+		double newfinalresult = resultnew;
+		printf("Full division of the sum of numbers (double) is equal to=%g\n", bigresultnew);
+		printf("Dividing the sum of numbers is equal to=%d\n", resultnew);
+		if (bigresultnew > newfinalresult)
+		{
+			divisibilitynumbers=0;
+		}
+		if (bigresultnew == newfinalresult)
+		{
+			divisibilitynumbers=1;
+		}
+	}
+	if(divisibilityamounts==0&&divisibilitynumbers==1)
+	{
+		printf("Divider =%d,number %d does not divide without remainder", divisor, sum);
+
+	}
+	if(divisibilityamounts==1&&divisibilitynumbers==0)
+	{
+		printf("Divider =%d,number %d divided without remainder", divisor, sum);
+
+	}
+	if(divisibilityamounts==1&&divisibilitynumbers==1)
+	{
+		printf("Divider =%d,number %d divided without remainder", divisor, sum);
+	}
+	if(divisibilityamounts==0&&divisibilitynumbers==0)
+	{
+		printf("Divider =%d,number %d does not divide without remainder", divisor, sum);
+	}
+	return 0;
 }
