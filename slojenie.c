@@ -1,4 +1,4 @@
-/*Программа вычисляет сумму цифр числа и делимость на другое v0.6 by Keksovname*/
+/*Программа вычисляет сумму цифр числа и делимость на другое v1.0 by Keksovname*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <conio.h>
