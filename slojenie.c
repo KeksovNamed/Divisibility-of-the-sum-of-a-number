@@ -10,6 +10,24 @@ int main()
 	printf("Введите десятичное целое число и делитель\n");
 	scanf("%d%d", &sum, &divisor);
 	printf("Число равно =%d делитель равно =%d\n", sum, divisor);
+	if (sum==0||divisor==0)
+	{
+		printf("На ноль делить нельзя!\n");
+		warning=1;
+		return 0;
+	}
+	if (warning==0);
+	{
+		if(sum==0&&divisor==0)
+		{
+			printf("На ноль делить нельзя!\n");
+			return 0;
+		}
+	}
+	if(warning==1)
+	{
+		//тогда ничего не делаем
+	}
 	printf("Теперь проверяем делимость чисел+деление сумм чисел/делитель!\n");
 	int result;
 	int length(int n)   //код взят из гугла
