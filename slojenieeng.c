@@ -6,7 +6,7 @@
 int main()
 {
 	unsigned int sum, divisor;
-	int divisibilitynumbers=0,divisibilityamounts=0;
+	int divisibilitynumbers=0,divisibilityamounts=0,warning=0;
 	printf("Enter a decimal integer and divisor\n");
 	scanf("%d%d", &sum, &divisor);
 	printf("The number is =%d divisor equals =%d\n", sum, divisor);
