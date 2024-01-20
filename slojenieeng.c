@@ -10,6 +10,24 @@ int main()
 	printf("Enter a decimal integer and divisor\n");
 	scanf("%d%d", &sum, &divisor);
 	printf("The number is =%d divisor equals =%d\n", sum, divisor);
+	if (sum==0||divisor==0)
+	{
+		printf("You can't divide by zero!\n");
+		warning=1;
+		return 0;
+	}
+	if (warning==0);
+	{
+		if(sum==0&&divisor==0)
+		{
+			printf("You can't divide by zero!\n");
+			return 0;
+		}
+	}
+	if(warning==1)
+	{
+		//then we do nothing
+	}
 	printf("Now we check the divisibility of numbers + division of sums of numbers / divisor!\n");
 	int result;
 	int length(int n)   //код взят из гугла
