@@ -6,7 +6,7 @@
 int main()
 {
 	unsigned int sum, divisor;
-	int divisibilitynumbers=0,divisibilityamounts=0;
+	int divisibilitynumbers=0,divisibilityamounts=0,warning=0;
 	printf("Введите десятичное целое число и делитель\n");
 	scanf("%d%d", &sum, &divisor);
 	printf("Число равно =%d делитель равно =%d\n", sum, divisor);
